@@ -301,6 +301,7 @@ open class PactBrokerClient(val pactBrokerUrl: String, val options: Map<String, 
     const val PROVIDER = "pb:provider"
     const val PROVIDER_TAG_VERSION = "pb:version-tag"
     const val PACTS = "pb:pacts"
+    const val PROVIDER_PACTS_FOR_VERIFICATION = "pb:provider-pacts-for-verification"
     const val UTF8 = "UTF-8"
 
     fun uploadTags(halClient: IHalClient, consumerName: String, version: String, tags: List<String>) {
